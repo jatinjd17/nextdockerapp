@@ -5,10 +5,10 @@ services:
     ports:
       - 5000:3000
     build:
-      context: ./
+      context: /home/ubuntu/Nextdockerapp/nextdockerapp/
       dockerfile: Dockerfile
     volumes:
-      - ./packages/landingpage:/usr/src/app
+      - /home/ubuntu/Nextdockerapp/nextdockerapp/:/usr/src/app
       - /usr/src/app/node_modules
       - /usr/src/app/.next
     env_file:
